@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .search-box {
+            width: 500px;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #dcdcdc;
+            outline: none;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons input {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+
+        .buttons input:hover {
+            border: 1px solid #c6c6c6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="links">
+    <a href="images.html">Images</a>
+    <a href="advanced.html">Advanced</a>
+</div>
+
+<form action="https://www.google.com/search">
+    <input class="search-box" type="text" name="q">
+    
+    <div class="buttons">
+        <input type="submit" value="Google Search">
+        <input type="submit" name="btnI" value="I'm Feeling Lucky">
+    </div>
+</form>
+
+</body>
+</html>
