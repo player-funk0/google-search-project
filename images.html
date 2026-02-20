@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .search-box {
+            width: 500px;
+            padding: 12px;
+            border-radius: 25px;
+            border: 1px solid #dcdcdc;
+            outline: none;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons input {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="links">
+    <a href="index.html">Search</a>
+    <a href="advanced.html">Advanced</a>
+</div>
+
+<form action="https://www.google.com/search">
+    <input type="hidden" name="tbm" value="isch">
+    <input class="search-box" type="text" name="q">
+
+    <div class="buttons">
+        <input type="submit" value="Search Images">
+    </div>
+</form>
+
+</body>
+</html>
